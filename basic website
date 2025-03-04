@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SourceTree Documentation</title>
+  <style>
+    /* Basic CSS styling for a black, white, and gold theme */
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #000;
+      border-bottom: 2px solid gold;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: gold;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+      border-bottom: 1px solid gold;
+      padding-bottom: 20px;
+    }
+    h1, h2, h3 {
+      color: gold;
+    }
+    ol {
+      margin-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid gold;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SourceTree Documentation</h1>
+    <nav>
+      <a href="#pushing">Pushing</a>
+      <a href="#pulling">Pulling</a>
+      <a href="#sync">Synchronization</a>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Pushing Section -->
+    <section id="pushing">
+      <h2>Pushing</h2>
+      <p>
+        Pushing in SourceTree means sending your local commits to the remote repository. This updates the remote with your changes and makes them available to your team.
+      </p>
+      <h3>Steps to Push Your Changes:</h3>
+      <ol>
+        <li><strong>Open Your Repository:</strong> Launch SourceTree and open the repository you wish to work on.</li>
+        <li><strong>Stage Changes:</strong> Review and select the modified files to stage them for commit.</li>
+        <li><strong>Commit:</strong> Enter a descriptive commit message that explains your changes, then click the <em>Commit</em> button to record your changes locally.</li>
+        <li><strong>Initiate Push:</strong> Click the <em>Push</em> button in the toolbar.</li>
+        <li><strong>Review & Confirm:</strong> Verify that the correct branch is selected in the push dialog, then confirm by clicking <em>Push</em> to update the remote repository.</li>
+      </ol>
+    </section>
+    
+    <!-- Pulling Section -->
+    <section id="pulling">
+      <h2>Pulling</h2>
+      <p>
+        Pulling in SourceTree is the process of fetching and merging changes from the remote repository into your local branch. This ensures your local repository is up-to-date with the team’s work.
+      </p>
+      <h3>Steps to Pull Remote Changes:</h3>
+      <ol>
+        <li><strong>Open Your Repository:</strong> Launch SourceTree and navigate to your desired repository.</li>
+        <li><strong>Initiate Pull:</strong> Click the <em>Pull</em> button on the toolbar.</li>
+        <li><strong>Select Remote Branch:</strong> Choose the correct remote branch in the pull dialog.</li>
+        <li><strong>Execute Pull:</strong> Click <em>OK</em> or <em>Pull</em> to fetch and merge remote changes into your local branch.</li>
+        <li><strong>Resolve Conflicts:</strong> If merge conflicts arise, use SourceTree's conflict resolution tools to fix them before completing the pull.</li>
+      </ol>
+    </section>
+    
+    <!-- Synchronization Section -->
+    <section id="sync">
+      <h2>Synchronization</h2>
+      <p>
+        Synchronization in SourceTree combines both pulling remote changes and pushing your local commits. This process keeps your local and remote repositories in sync.
+      </p>
+      <h3>Steps to Synchronize Your Repository:</h3>
+      <ol>
+        <li><strong>Open Your Repository:</strong> Launch SourceTree and open your repository.</li>
+        <li><strong>Access the Sync View:</strong> Click the <em>Sync</em> (or <em>Pull/Push</em>) button in the toolbar to view incoming and outgoing commits.</li>
+        <li><strong>Pull Changes:</strong> First, pull the latest changes from the remote repository to ensure your local copy is up-to-date.</li>
+        <li><strong>Push Local Commits:</strong> Once your local repository is updated, push your commits by clicking the <em>Push</em> button within the sync view.</li>
+        <li><strong>Confirm Synchronization:</strong> Verify that both your local and remote repositories display the same commit history.</li>
+      </ol>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 SourceTree Documentation. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
